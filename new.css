@@ -1,0 +1,21 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-brand span {
+  font-size: 24px;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+button.btn:hover {
+  opacity: 0.9;
+}
+
+.bg-danger img,
+.bg-danger {
+  border-radius: 5px;
+}

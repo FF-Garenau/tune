@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TuneHub</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="new.css" />
+</head>
+<body class="bg-black text-white" style="font-family: 'Roboto', sans-serif;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/tune.png" alt="tunehublogo" class="me-2" style="width: 50px;" />
+        <span class="text-warning fw-bold fs-4">TUNE</span>
+      </a>
+      <form class="d-flex flex-grow-1 mx-3 position-relative">
+        <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white"></i>
+        <input class="form-control bg-dark text-white ps-5 rounded-pill" type="search" placeholder="What you want to listen" />
+      </form>
+      <div class="d-flex">
+        <button class="btn btn-outline-light me-2">Sign up</button>
+        <button class="btn btn-warning text-whiteb login" onclick="login()">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container-fluid py-4">
+    <div class="row">
+      
+      <!-- Sidebar -->
+      <div class="col-md-3 mb-4">
+        <div class="bg-dark p-4 rounded h-100">
+          <ul class="list-unstyled">
+            <li class="mb-4"><i class="fa fa-home me-2"></i> Home</li>
+            <li class="mb-4"><i class="fa fa-book me-2"></i> Library</li>
+            <li class="mb-4"><i class="fa fa-search me-2"></i> Search</li>
+            <li class="mb-4"><i class="fa fa-user me-2"></i> Profile</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9">
+        
+        <!-- Filter Buttons -->
+        <div class="mb-4 d-flex gap-2 flex-wrap">
+          <button class="btn btn-outline-light">All</button>
+          <button class="btn btn-warning text-white">Music</button>
+          <button class="btn btn-warning text-white">Podcast</button>
+        </div>
+
+        <!-- Song Posters Row 1 -->
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/Aadukalam.jpg" class="img-fluid" alt="Aadukalam">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/ennai arindhal.jpg" class="img-fluid" alt="Ennai Arindhal">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/vaaranam Aayiram.jpg" class="img-fluid" alt="Vaaranam Aayiram">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/coolie.jpg" class="img-fluid" alt="Coolie">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/thalivanthalaivi.jpg" class="img-fluid" alt="Thalivan Thalaivi">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/aambala.jpg" class="img-fluid" alt="Aambala">
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Artists -->
+        <h4 class="mt-5 text-warning">Popular Artists</h4>
+        <div class="row g-4 text-center mt-2">
+          <div class="col-4 col-md-2">
+            <img src="./img/aniruth.jpg" class="rounded-circle img-fluid" alt="Aniruth">
+            <p class="mt-2">Aniruth</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <img src="./img/rahaman.jpg" class="rounded-circle img-fluid" alt="A.R. Rahman">
+            <p class="mt-2">A.R. Rahman</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <img src="./img/harish.jpg" class="rounded-circle img-fluid" alt="Harish Jayaraj">
+            <p class="mt-2">Harish Jayaraj</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <img src="./img/gv.jpg" class="rounded-circle img-fluid" alt="G.V. Prakash">
+            <p class="mt-2">G.V. Prakash</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <img src="./img/yuvan.jpg" class="rounded-circle img-fluid" alt="Yuvan">
+            <p class="mt-2">Yuvan</p>
+          </div>
+          <div class="col-4 col-md-2">
+            <img src="./img/imman.jpg" class="rounded-circle img-fluid" alt="Imman">
+            <p class="mt-2">Imman</p>
+          </div>
+        </div>
+
+        <!-- Song Posters Row 2 -->
+        <div class="row g-3 mt-4">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/nanban.jpg" class="img-fluid" alt="Nanban">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/vikram.jpg" class="img-fluid" alt="Vikram">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/3.jpg" class="img-fluid" alt="3">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/amaran.jpg" class="img-fluid" alt="Amaran">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/retro.jpg" class="img-fluid" alt="Retro">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="bg-danger rounded overflow-hidden">
+              <img src="movieposter/master.jpg" class="img-fluid" alt="Master">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="popup"></div>
+  <div class="loggedin">
+         <style>
+            .loggedin{
+                display: none;
+            }
+         </style>
+  </div>
+  <script>
+  function login() {
+    const loggedin = document.getElementsByClassName('loggedin')[0];
+    loggedin.innerHTML = `
+      <h5 class="text-center mb-3">Login</h5>
+      <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-warning text-white">Login</button>
+        </div>
+      </form>
+    `;
+    loggedin.style.display = "block";
+  }
+</script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
